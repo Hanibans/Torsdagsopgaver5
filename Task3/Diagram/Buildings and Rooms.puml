@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Building{
+-rooms
+-numberOfFloors
++getRooms()
++getNumberOfFloors()
++setRooms()
++setNumberOfFloors()
+}
+
+class Room{
+-numberOfLamps
+-numberOfWindows
++getNumberOfLamps()
++getNumberOfWindows()
++setNumberOfLamps()
++setNumberOfWindows()
+}
+
+class Main{
++static void main()
+-static int countLampsInBuilding()
+-static int countWindowsInBuilding()
+-static boolean isNormal()
+}
+
+Building *-- Room
+
+@enduml
